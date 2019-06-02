@@ -1,0 +1,28 @@
+.dignity-and-pluses {
+  background: $gray-color;
+}
+
+  .dignity-and-pluses__header {
+    @include section-header();
+  }
+
+  .dignity-and-pluses__pluses {
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .dignity-and-pluses__pluses>li {
+    @include section-text();
+    background: url("../images/plus_icon.gif") no-repeat left 5px;
+    flex: 0 0 49%;
+    padding-left: 40px;
+    margin-bottom: 20px;
+  }
+
+@media (max-width: 769px) {
+  .dignity-and-pluses__pluses>li {
+    flex: 1 0 100%;
+  }
+}
