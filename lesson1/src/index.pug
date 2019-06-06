@@ -96,7 +96,7 @@ html(lang="en")
                     div(class="row no-gutters")
                         div(class="col-lg-6 px-0 mb-4")
                             div(class="review-unit review-unit_padding-right")
-                                div(class="sreview-unit__img-block")
+                                div(class="review-unit__img-block")
                                     img(class="review-unit__img" src="https://placeimg.com/90/90/nature" alt="")
                                 div(class="review-unit__desc-block")
                                     div(class="review-unit__desc")
@@ -105,7 +105,7 @@ html(lang="en")
 
                         div(class="col-lg-6 px-0 mb-4")
                             div(class="review-unit review-unit_padding-left")
-                                div(class="sreview-unit__img-block")
+                                div(class="review-unit__img-block")
                                     img(class="review-unit__img" src="https://placeimg.com/90/90/nature" alt="")
                                 div(class="review-unit__desc-block")
                                     div(class="review-unit__desc")
@@ -115,7 +115,7 @@ html(lang="en")
                     div(class="row no-gutters")
                         div(class="col-lg-6 px-0 mb-4")
                             div(class="review-unit review-unit_padding-right")
-                                div(class="sreview-unit__img-block")
+                                div(class="review-unit__img-block")
                                     img(class="review-unit__img" src="https://placeimg.com/90/90/nature" alt="")
                                 div(class="review-unit__desc-block")
                                     div(class="review-unit__desc")
@@ -124,7 +124,7 @@ html(lang="en")
 
                         div(class="col-lg-6 px-0 mb-4")
                             div(class="review-unit review-unit_padding-left")
-                                div(class="sreview-unit__img-block")
+                                div(class="review-unit__img-block")
                                     img(class="review-unit__img" src="https://placeimg.com/90/90/nature" alt="")
                                 div(class="review-unit__desc-block")
                                     div(class="review-unit__desc")
@@ -132,66 +132,75 @@ html(lang="en")
                                         div(class="review-unit__desc-author mt-2") Lourens S.
 
 
-                section(class="buyItNow")
-                    h2(class="buyItNowHeader") Buy it now
-                    div(class="buyUnits")
-                        section(class="buyUnit")
-                            h2 Standart
-                            div(class="buyUnitPrice") $100
-                            ol(class="buyUnitText")
-                                li Porro officia cumque sint deleniti;
-                                li Тemo facere rem vitae odit;
-                                li Cum odio, iste quia doloribus autem;
-                                li Aperiam nulla ea neque.
-                            a(href="#" class="buyBtn") Buy
+                section(class="buy-it-now container px-5 py-5")
+                    h2(class="buy-it-now__header") Buy it now
 
-                        section(class="buyUnit")
-                            h2 Premium
-                            div(class="buyUnitPrice") $150
-                            ol(class="buyUnitText")
-                                li Porro officia cumque sint deleniti;
-                                li Тemo facere rem vitae odit;
-                                li Cum odio, iste quia doloribus autem;
-                                li Aperiam nulla ea neque;
-                                li Porro officia cumque sint deleniti;
-                                li Тemo facere rem vitae odit;
-                                li Cum odio, iste quia doloribus autem;
-                                li Aperiam nulla ea neque.
-                            a(href="#" class="buyBtn") Buy
+                    div(class="buy-it-now__unit-block container")
+                        div(class="row no-gutters justify-content-center")
+                            div(class="buy-it-now__col col-lg-4 col-md-6 px-2")
+                                section(class="buy-it-now__unit my-3")
+                                    h2(class="buy-it-now__unit-header py-2 my-0") Standart
+                                    div(class="buy-it-now__unit-price py-3") $100
+                                    ol(class="buy-it-now__unit-text py-3 px-2 my-0")
+                                        li Porro officia cumque sint deleniti;
+                                        li Тemo facere rem vitae odit;
+                                        li Cum odio, iste quia doloribus autem;
+                                        li Aperiam nulla ea neque.
+                                    a(href="#" class="buy-it-now__unit-buy-btn py-2 mx-3 mb-3") Buy
 
-                        section(class="buyUnit")
-                            h2 Lux
-                            div(class="buyUnitPrice") $200
-                            ol(class="buyUnitText")
-                                li Porro officia cumque sint deleniti;
-                                li Тemo facere rem vitae odit;
-                                li Cum odio, iste quia doloribus autem;
-                                li Aperiam nulla ea neque.
-                                li Porro officia cumque sint deleniti;
-                                li Тemo facere rem vitae odit;
-                                li Cum odio, iste quia doloribus autem;
-                                li Aperiam nulla ea neque.
-                                li Porro officia cumque sint deleniti;
-                                li Тemo facere rem vitae odit;
-                                li Cum odio, iste quia doloribus autem;
-                                li Aperiam nulla ea neque.
-                            a(href="#" class="buyBtn") Buy
+                            div(class="buy-it-now__col col-lg-4 col-md-6 px-2")
+                                section(class="buy-it-now__unit my-3")
+                                    h2(class="buy-it-now__unit-header py-2 my-0") Premium
+                                    div(class="buy-it-now__unit-price py-3") $150
+                                    ol(class="buy-it-now__unit-text py-3 px-2 my-0")
+                                        li Porro officia cumque sint deleniti;
+                                        li Тemo facere rem vitae odit;
+                                        li Cum odio, iste quia doloribus autem;
+                                        li Aperiam nulla ea neque;
+                                        li Porro officia cumque sint deleniti;
+                                        li Тemo facere rem vitae odit;
+                                        li Cum odio, iste quia doloribus autem;
+                                        li Aperiam nulla ea neque.
+                                    a(href="#" class="buy-it-now__unit-buy-btn py-2 mx-3 mb-3") Buy
+
+                            div(class="buy-it-now__col col-lg-4 col-md-6 px-2")
+                                section(class="buy-it-now__unit my-3")
+                                    h2(class="buy-it-now__unit-header py-2 my-0") Lux
+                                    div(class="buy-it-now__unit-price py-3") $200
+                                    ol(class="buy-it-now__unit-text py-3 px-2 my-0")
+                                        li Porro officia cumque sint deleniti;
+                                        li Тemo facere rem vitae odit;
+                                        li Cum odio, iste quia doloribus autem;
+                                        li Aperiam nulla ea neque.
+                                        li Porro officia cumque sint deleniti;
+                                        li Тemo facere rem vitae odit;
+                                        li Cum odio, iste quia doloribus autem;
+                                        li Aperiam nulla ea neque.
+                                        li Porro officia cumque sint deleniti;
+                                        li Тemo facere rem vitae odit;
+                                        li Cum odio, iste quia doloribus autem;
+                                        li Aperiam nulla ea neque.
+                                    a(href="#" class="buy-it-now__unit-buy-btn py-2 mx-3 mb-3") Buy
 
 
-            footer
-                h2(class="contactsHeader") Contacts
-                div(class="contactsContent")
-                    form(action="index2.html" method="post")
-                        input(type="text" name="name" placeholder="Your name:")
-                        input(type="text" name="email" placeholder="Your email:")
-                        textarea(name="message" placeholder="Your message:")
-                        input(type="submit" value="SEND")
+            footer(class="page-footer container py-5 px-5")
+                h2(class="page-footer__header mb-4") Contacts
+                div(class="row no-gutters")
+                    div(class="col-lg-7 col-md-8")
+                        div(class="page-footer__contacts-content")
+                            form(action="index2.html" method="post" class="my-0")
+                                input(type="text" name="name" placeholder="Your name:")
+                                input(type="text" name="email" placeholder="Your email:")
+                                textarea(name="message" placeholder="Your message:")
+                                input(type="submit" value="SEND")
 
-                    div class="contactsList"
-                        div(class="skype") here_your_login_skype
-                        div(class="icq") 279679659
-                        div(class="email") psdhtmlcss@mail.ru
-                        div(class="phone") 80 00 4568 55 55
-                        div(class="socialIcons") lfigx
+                    div(class="col-lg-5 col-md-4")
+                        div(class="page-footer__contactsList px-4")
+                            div(class="page-footer__contactsList-block")
+                                div(class="page-footer__contactsList-skype") here_your_login_skype
+                                div(class="page-footer__contactsList-icq") 279679659
+                                div(class="page-footer__contactsList-email") psdhtmlcss@mail.ru
+                                div(class="page-footer__contactsList-phone") 80 00 4568 55 55
+                                div(class="page-footer__contactsList-socialIcons") lfigx
 
             div(class="copy") Copyright &copy; 2014 Product name · PSD HTML CSS

@@ -1,0 +1,5 @@
+.copy {
+  @include copyright-text();
+  background: $light-color;
+  height: 26px;
+}

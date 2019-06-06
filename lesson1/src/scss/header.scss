@@ -30,6 +30,12 @@
     }
 
 
+@media (max-width: 541px) {
+  .page-header {
+    padding: 1.5rem 1rem!important;
+  }
+}
+
 @media (max-width: 993px) {
   .product-name {
     text-align: center;

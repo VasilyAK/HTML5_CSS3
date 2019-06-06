@@ -1,9 +1,14 @@
+@font-face {
+  font-family: SocialIco;
+  src: url("../fonts/Socialico.ttf") format('truetype');
+}
+
 $dark-color: #445161;
 $light-color: #fff;
 $gray-color: #f5f5f5;
 $review-back-color: #ebebeb;
 
-// размеры шрифтов
+// стили и размеры шрифтов
 
 @mixin page-header () {
   color: $light-color;
@@ -31,14 +36,14 @@ $review-back-color: #ebebeb;
 
 @mixin section-header() {
   color: $dark-color;
-  line-height: 36px;
   font-size: 30px;
   font-weight: 400;
+  line-height: 36px;
   text-align: center;
 
   @media (max-width: 541px) {
-    line-height: 28px;
     font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -54,9 +59,9 @@ $review-back-color: #ebebeb;
 }
 
 @mixin screenshot-unit-head() {
-  line-height: 30px;
   font-size: 24px;
   font-weight: 400;
+  line-height: 30px;
   width: 100%;
 
   @media (max-width: 541px) {
@@ -87,5 +92,118 @@ $review-back-color: #ebebeb;
   @media (max-width: 541px) {
     font-size: 12px;
     line-height: 16px;
+  }
+}
+
+@mixin buy-it-now-header() {
+  color: $light-color;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+
+  @media (max-width: 541px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@mixin buy-it-now-price() {
+  color: $dark-color;
+  font-size: 40px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (max-width: 541px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@mixin buy-it-now-text() {
+  color: $light-color;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (max-width: 541px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@mixin buy-it-now-btn() {
+  color: $dark-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 541px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@mixin page-footer__input-text() {
+  color: $dark-color;
+  font-size: 16px;
+  line-height: 24px;
+
+
+  @media (max-width: 541px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@mixin page-footer__input-submit() {
+  color: $dark-color;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+
+  @media (max-width: 541px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@mixin page-footer__social() {
+  color: $light-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @media (max-width: 541px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@mixin page-footer__social-icons() {
+  font-family: SocialIco, sans-serif;
+  color: $light-color;
+  font-size: 60px;
+  line-height: 44px;
+
+  @media (max-width: 541px) {
+    font-size: 40px;
+    line-height: 36px;
+  }
+}
+
+@mixin copyright-text() {
+  color: $dark-color;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 26px;
+  text-align: center;
+
+  @media (max-width: 541px) {
+    font-size: 11px;
+    line-height: 20px;
   }
 }

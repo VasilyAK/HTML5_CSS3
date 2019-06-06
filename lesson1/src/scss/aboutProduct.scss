@@ -32,7 +32,17 @@
     }
 
 
+@media (max-width: 541px) {
+  .about-product {
+    padding: 1.5rem 1rem!important;
+  }
+}
+
 @media (max-width: 993px) {
+  .about-product__header {
+    text-align: center;
+  }
+
   .about-product__img-block {
     justify-content: center !important;
     padding-top: 0.5rem;
