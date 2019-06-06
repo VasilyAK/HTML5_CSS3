@@ -123,11 +123,8 @@ module.exports = {
 		}),
 
 		new CopyWebpackPlugin([
-			{
-				from: './images',
-				to: 'images',
-				copyUnmodified: true
-			}
+			{ from: './images', to: 'images', copyUnmodified: true },
+			{ from: './fonts', to: 'fonts', copyUnmodified: true }
 		],
 			{ignore: [{glob: 'svg/*'}]}
 		),

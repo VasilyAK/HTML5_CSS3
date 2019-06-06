@@ -1,0 +1,99 @@
+.page-footer {
+  background: $dark-color;
+}
+
+  .page-footer__header {
+    @include section-header();
+    color: $light-color;
+  }
+
+    .page-footer__contacts-content {
+      margin-left: auto;
+      max-width: 500px;
+    }
+
+      .page-footer__contacts-content input[type="text"],
+      .page-footer__contacts-content textarea {
+        @include page-footer__input-text();
+        display: block;
+        border-radius: 5px;
+        border: none;
+        box-sizing: border-box;
+        margin: 0 auto 1rem;
+        padding: 0.5rem;
+        width: 100%;
+        outline: none;
+      }
+
+      .page-footer__contacts-content textarea {
+        min-height: 170px;
+      }
+
+      .page-footer__contacts-content input[type="submit"] {
+        @include page-footer__input-submit();
+        border-radius: 5px;
+        background-color: $light-color;
+        border: none;
+        display: block;
+        margin: 0 auto;
+        padding: 0.5rem 2rem;
+        cursor: pointer;
+        outline: none;
+      }
+
+    .page-footer__contactsList {
+      display: flex;
+    }
+
+      .page-footer__contactsList-block {
+        display: inline-flex;
+        flex-flow: column nowrap;
+      }
+
+        .page-footer__contactsList-skype,
+        .page-footer__contactsList-icq,
+        .page-footer__contactsList-email,
+        .page-footer__contactsList-phone {
+          @include page-footer__social();
+          padding-left: 30px;
+          margin-bottom: 15px;
+        }
+
+        .page-footer__contactsList-skype {
+          background: url("../images/skype_icon.png") no-repeat left center;
+        }
+
+        .page-footer__contactsList-icq {
+          background: url("../images/icq_icon.png") no-repeat left center;
+        }
+
+        .page-footer__contactsList-email {
+          background: url("../images/email_icon.png") no-repeat left center;
+        }
+
+        .page-footer__contactsList-phone {
+          background: url("../images/phone_icon.png") no-repeat left center;
+        }
+
+        .page-footer__contactsList-socialIcons {
+          @include page-footer__social-icons();
+          cursor: pointer;
+        }
+
+
+@media (max-width: 541px) {
+  .page-footer {
+    padding: 1.5rem 1rem!important;
+  }
+}
+
+@media (max-width: 769px) {
+  .page-footer__contacts-content {
+    margin: 0 auto;
+  }
+
+  .page-footer__contactsList {
+    justify-content: center;
+    padding-top: 1.5rem;
+  }
+}

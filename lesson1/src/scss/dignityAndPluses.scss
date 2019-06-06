@@ -21,6 +21,13 @@
     margin-bottom: 20px;
   }
 
+
+@media (max-width: 541px) {
+  .dignity-and-pluses {
+    padding: 1.5rem 1rem!important;
+  }
+}
+
 @media (max-width: 769px) {
   .dignity-and-pluses__pluses>li {
     flex: 1 0 100%;
