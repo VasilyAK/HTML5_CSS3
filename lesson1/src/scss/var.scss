@@ -1,0 +1,91 @@
+$dark-color: #445161;
+$light-color: #fff;
+$gray-color: #f5f5f5;
+$review-back-color: #ebebeb;
+
+// размеры шрифтов
+
+@mixin page-header () {
+  color: $light-color;
+  font-size: 60px;
+  font-weight: 400;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 541px) {
+    font-size: 36px;
+  }
+}
+
+@mixin page-header-list () {
+  color: $light-color;
+  font-size: 20px;
+  line-height: 36px;
+  list-style: inside url("../images/check_icon.png");
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 541px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@mixin section-header() {
+  color: $dark-color;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+
+  @media (max-width: 541px) {
+    line-height: 28px;
+    font-size: 24px;
+  }
+}
+
+@mixin section-text() {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+
+  @media (max-width: 541px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@mixin screenshot-unit-head() {
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  width: 100%;
+
+  @media (max-width: 541px) {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+@mixin review-text() {
+  color: $dark-color;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+  text-align: justify;
+
+  @media (max-width: 541px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@mixin review-text-author() {
+  color: #989898;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (max-width: 541px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

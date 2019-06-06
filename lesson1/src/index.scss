@@ -1,0 +1,21 @@
+@import "scss/var";
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  background: #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1280px !important;
+}
+
+@import "scss/header";
+@import "scss/aboutProduct";
+@import "scss/dignityAndPluses";
+@import "scss/screenshots";
+@import "scss/reviews";
+
