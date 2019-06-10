@@ -1,0 +1,12 @@
+@import "scss/_var";
+@import "scss/_mixin";
+@import "scss/fonts";
+
+html, body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@import "scss/header";
+@import "scss/back_video";
+@import "scss/form";

@@ -1,0 +1,69 @@
+.video-block {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  .back-video {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .onVideo {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .onVideo__label {
+      flex: 0 0 auto;
+      font-family: Hind, sans-serif;
+      font-size: 30px;
+      text-align: center;
+      color: #4b4b4b;
+      padding: 0 50px;
+      text-shadow: 0 0 5px rgba(41, 108, 54, 0.8);
+    }
+
+    .onVideo__button {
+      display: block;
+      background: none;
+      border-radius: 7px;
+      border: 2px solid #296c36;
+      box-shadow: 0 0 2px 1px #296c36;
+      color: #4b4b4b;
+      cursor: pointer;
+      font-family: Hind, cursive;
+      font-size: 19px;
+      font-weight: bold;
+      height: 70px;
+      margin: 30px auto;
+      padding: 15px 40px;
+      text-decoration: none;
+      text-shadow: 0 0 5px rgba(41, 108, 54, 0.8);
+      width: 180px;
+      outline: none;
+
+      &:active {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .onVideo {
+    justify-content: flex-end!important;
+
+    .onVideo__label {
+      font-size: 22px !important;
+    }
+  }
+}
