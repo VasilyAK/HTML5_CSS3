@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css" type="">
+    <title>Lesson3</title>
+  <link href="css/index.css" rel="stylesheet"></head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar navbar-expand-xl navbar-light bg-light position-fix-top"><a class="navbar-brand" href="#">cab<span class="navbar-brand_sp1">hub</span><span class="navbar-brand_sp2">call and relex</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <div id="menuToggle">
+              <input type="checkbox"><span id="span1"></span><span id="span2"></span><span id="span3"></span>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#">home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">order now</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">contacts</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header__book-cab">
+          <p class="header__book-cab-p1">book cab now</p><a class="header__book-cab-p2" href="tel:+12345678900">+123 4567 8900</a><a class="header__book-cab-p3" href="https://www.psdfreebies.com">www.psdfreebies.com</a>
+        </div>
+      </header>
+      <div class="about"><img class="about__car" src="images/car-about.png">
+        <article class="about__content">
+          <h1 class="about__content-header">best in city<span class="about__content-header-sp1">trusted cab servies in new york</span></h1>
+          <p class="about__content-p1">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.</p><a class="about__content-btn">read more</a>
+        </article>
+        <div class="about__book-form">
+          <div class="about__book-form-header">book a<span class="about__book-form-header_sp1"> cab</span></div>
+          <form action="">
+            <input type="text" name="name" placeholder="Name" pattern="^([A-Za-z]+)$">
+            <input type="tel" name="tel" placeholder="Phone">
+            <input type="text" name="date" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input type="text" name="time" placeholder="Time" onfocus="(this.type='time')" onblur="(this.type='text')">
+            <input type="text" name="start" placeholder="Start" pattern="^([A-Za-z,./s-]+)$">
+            <input type="text" name="end" placeholder="End" pattern="^([A-Za-z,./s-]+)$">
+            <input type="text" name="vehicle" placeholder="Choose Vehicle" list="vehicles" pattern="^([A-Za-z,./s-]+)$">
+            <datalist id="vehicles">
+              <option value="auto1"></option>
+              <option value="auto2"></option>
+              <option value="auto3"></option>
+              <option value="auto4"></option>
+              <option value="auto5"></option>
+            </datalist>
+            <input class="about__book-form-btn" type="submit" value="submit">
+          </form>
+        </div>
+      </div>
+      <div class="tariffs">
+        <h2 class="tariffs__header"><span class="h2__sp1">our</span><span class="h2__sp2">tariffs</span></h2>
+        <div class="tariffs-block">
+          <article class="tariffs__item">
+            <div class="tariffs__item-white-block"></div><img class="tariffs__item-img" src="images/car-tariffs.png">
+            <h3 class="tariffs__item-header">economy class</h3>
+            <div class="tariffs__item-content">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+            <div class="tariffs__item-price">$1.5/mi</div><a class="about__content-btn">read more</a>
+          </article>
+          <article class="tariffs__item tariffs-item-best">
+            <div class="tariffs__item-white-block"></div><img class="tariffs__item-img" src="images/car-tariffs.png">
+            <h3 class="tariffs__item-header">standart class</h3>
+            <div class="tariffs__item-content">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+            <div class="tariffs__item-price">$1.5/mi</div><a class="about__content-btn">read more</a>
+          </article>
+          <article class="tariffs__item">
+            <div class="tariffs__item-white-block"></div><img class="tariffs__item-img" src="images/car-tariffs.png">
+            <h3 class="tariffs__item-header">business class</h3>
+            <div class="tariffs__item-content">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+            <div class="tariffs__item-price">$1.5/mi</div><a class="about__content-btn">read more</a>
+          </article>
+        </div>
+      </div>
+      <div class="services">
+        <h2 class="services__header"><span class="h2__sp1">we do best</span><span class="h2__sp2">than you wish</span></h2>
+        <div class="services__item-block">
+          <article class="services__item"><img class="services__item-img" src="images/service-pic1.png">
+            <h3 class="services__item-header">home pickup</h3>
+            <p class="services__item-content">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+          </article>
+          <article class="services__item"><img class="services__item-img" src="images/service-pic2.png">
+            <h3 class="services__item-header">home pickup</h3>
+            <p class="services__item-content">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+          </article>
+          <article class="services__item"><img class="services__item-img" src="images/service-pic3.png">
+            <h3 class="services__item-header">home pickup</h3>
+            <p class="services__item-content">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+          </article>
+          <article class="services__item"><img class="services__item-img" src="images/service-pic4.png">
+            <h3 class="services__item-header">home pickup</h3>
+            <p class="services__item-content">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+          </article>
+        </div><a class="services__btn">read more</a>
+      </div>
+      <div class="cab">
+        <h2 class="cab__header"><span class="h2__sp1">download</span><span class="h2__sp2">best cab service</span></h2>
+        <div class="cab__content-block">
+          <article class="cab__side">
+            <h3 class="cab__side-header">Download the Cab voucher app free! Get Exciting New Offers</h3>
+            <p class="cab__side-content">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p><a class="cab__side-btn-service" href="#"><img src="images/cab-btn-gp.png"></a><a class="cab__side-btn-service" href="#"><img src="images/cab-btn-gp.png"></a>
+          </article><img class="cab__bg" src="images/cab-bg.png">
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="reviews__header"><span class="h2__sp1">happy client's</span><span class="h2__sp2">testimonials</span></div>
+        <div class="reviews__item-block">
+          <section class="reviews__item">
+            <p class="reviews__item-content">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus.</p><img class="reviews__item-photo" src="images/photo-reviews.png">
+            <p class="reviews__item-name">john doe</p>
+            <p class="reviews__item-about">business man</p>
+          </section>
+          <section class="reviews__item">
+            <p class="reviews__item-content">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus.</p><img class="reviews__item-photo" src="images/photo-reviews.png">
+            <p class="reviews__item-name">john doe</p>
+            <p class="reviews__item-about">business man</p>
+          </section>
+        </div>
+      </div>
+      <div class="contacts">
+        <p class="contacts__content">we are ready to take your call 24 hours, 7 days!</p><a class="contacts__phone" href="tel:+12345678900">+123 4567 8900</a>
+      </div>
+      <footer class="footer">
+        <div class="footer__item">
+          <h4 class="footer__item-header">about cab hub</h4>
+          <p class="footer__item-content footer__item-content_white">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.</p>
+          <p class="footer__item-1-icons"><a class="footer__item-content footer__item-content_yellow icon-facebook" href="#"></a><a class="footer__item-content footer__item-content_yellow icon-gplus" href="#"></a><a class="footer__item-content footer__item-content_yellow icon-twitter" href="#"></a><a class="footer__item-content footer__item-content_yellow icon-instagram" href="#"></a></p>
+        </div>
+        <div class="footer__item">
+          <h4 class="footer__item-header">download</h4>
+          <p class="footer__item-content footer__item-content_white">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit.</p>
+          <div class="footer__item-2-icons"><a class="footer__item-content footer__item-content_yellow" href="#">Android Users</a><a class="footer__item-content footer__item-content_white icon-android" href="#"></a><a class="footer__item-content footer__item-content_yellow" href="#">IOS Users</a><a class="footer__item-content footer__item-content_white icon-apple" href="#"></a></div>
+        </div>
+        <div class="footer__item">
+          <h4 class="footer__item-header">contact</h4>
+          <div class="footer__item-3-icons"><a class="footer__item-content footer__item-content_white icon-location" href="#"></a><a class="footer__item-content footer__item-content_white" href="#">+123, Main Street, Your City, New York, USA 789456</a><a class="footer__item-content footer__item-content_white icon-mobile" href="#"></a><a class="footer__item-content footer__item-content_white" href="#">+123 4567 8900</a><a class="footer__item-content footer__item-content_white icon-mail" href="#"></a><a class="footer__item-content footer__item-content_white" href="#">free@psdfreebies.com</a><a class="footer__item-content footer__item-content_white icon-mouse-pointer" href="#"></a><a class="footer__item-content footer__item-content_white" href="#">www.psdfreebies.com</a></div>
+        </div>
+        <div class="copy">Copyright &copy; 2015 PSDfreebies.com</div>
+      </footer>
+    </div>
+  <script type="text/javascript" src="js/index.js"></script></body>
+</html>

@@ -1,0 +1,16 @@
+.contacts {
+  background: $yellow;
+  grid-area: contacts;
+  padding: 65px $main-paddingY 75px;
+
+  .contacts__content {
+    @include contacts-content();
+  }
+
+  .contacts__phone {
+    @include contacts-phone();
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+}

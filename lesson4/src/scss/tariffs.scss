@@ -1,0 +1,99 @@
+.tariffs {
+  background: $white;
+  grid-area: tariffs;
+  padding: 50px $main-paddingY;
+
+  .tariffs__header {
+    .h2__sp1 {
+      @include block-header-sp1();
+      display: block;
+    }
+
+    .h2__sp2 {
+      @include block-header-sp2($black);
+      display: block;
+    }
+  }
+
+  .tariffs-block {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    .tariffs__item {
+      background: $beige;
+      padding: 6.5%;
+      position: relative;
+      margin-top: 20px;
+
+      .tariffs__item-white-block {
+        background: $white;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .tariffs__item-img {
+        object-fit: contain;
+        object-position: center;
+        padding: 0 30px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .tariffs__item-header {
+        @include tariffs-header();
+        margin-bottom: 10px;
+      }
+
+      .tariffs__item-content {
+        @include tariffs-content();
+      }
+
+      .tariffs__item-price {
+        @include tariffs-price($yellow);
+        margin: 20px 0;
+      }
+
+      .about__content-btn {
+        @include link-btn($yellow, $black);
+        margin: 0 auto;
+      }
+    }
+
+    .tariffs-item-best {
+      background: url("../images/tariffs-star.png") no-repeat $yellow;
+      background-position: bottom right;
+
+      .tariffs__item-price {
+        @include tariffs-price($black);
+      }
+
+      .about__content-btn {
+        @include link-btn($black, $white);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1307px) {
+  .tariffs__item:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+@media (max-width: 853px) {
+  .tariffs__item:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}

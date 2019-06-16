@@ -1,0 +1,490 @@
+// buttons
+@mixin link-btn ($color-bg, $color-txt){
+  background: $color-bg;
+  border-radius: 5px;
+  color: $color-txt;
+  cursor: pointer;
+  display: block;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  width: 165px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $color-txt;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0);
+    text-shadow: 2px 2px 0 $white;
+  }
+}
+//--------------------------
+// text-style
+// -------------------------
+
+// block-header
+@mixin block-header-sp1 () {
+  color: $yellow;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 31px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 26px;
+  }
+}
+
+@mixin block-header-sp2 ($color) {
+  color: $color;
+  font-size: 44px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 35px;
+  }
+}
+
+
+//header
+@mixin book-cab-p1 () {
+  color: $yellow;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14.4px;
+    line-height: 16px;
+  }
+}
+
+@mixin book-cab-p2 () {
+  color: $white;
+  font-size: 72px;
+  line-height: 76px;
+  text-align: center;
+  text-decoration: none;
+
+  @media (max-width: 1024px) {
+    font-size: 48px;
+    line-height: 51px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 29px;
+    line-height: 30.4px;
+  }
+}
+
+@mixin book-cab-p3 () {
+  color: $white;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (max-width: 1024px) {
+    font-size: 13px;
+    line-height: 27px;
+    letter-spacing: 9px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: 7px;
+  }
+}
+
+
+//about
+@mixin about-header () {
+  color: $black;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
+}
+
+@mixin about-header-sp1 () {
+  font-size: 50px;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 28px;
+  }
+}
+
+@mixin about-header-p1 () {
+  font-size: 18px;
+  text-align: justify;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+@mixin about-form-header () {
+  color: $white;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 75px;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 26px;
+  }
+}
+
+@mixin about-form-input () {
+  color: $black;
+  font-size: 20px;
+  font-weight: 600;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+
+//tariffs
+@mixin tariffs-header () {
+  color: $black;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
+}
+
+@mixin tariffs-content () {
+  color: $black;
+  font-size: 18px;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+@mixin tariffs-price ($color) {
+  color: $color;
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 32px;
+  }
+}
+
+
+//service
+@mixin services-item-header () {
+  color: $yellow;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
+}
+
+@mixin services-item-content () {
+  color: $white;
+  font-size: 18px;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+
+//cab
+@mixin cab-side-header () {
+  color: $black;
+  font-size: 25.5px;
+  font-weight: 700;
+
+  @media (max-width: 1024px) {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
+}
+
+@mixin cab-side-content () {
+  color: $black;
+  font-size: 18px;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+
+//reviews
+@mixin reviews-content () {
+  color: $white;
+  font-size: 18px;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+@mixin reviews-name () {
+  color: $yellow;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
+}
+
+@mixin reviews-about () {
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+
+//contacts
+@mixin contacts-content () {
+  color: $black;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (max-width: 1330px) {
+    font-size: 31px;
+    line-height: 31px;
+  }
+
+  @media (max-width: 1165px) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 1055px) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (max-width: 950px) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @media (max-width: 830px) {
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 610px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+@mixin contacts-phone () {
+  color: $black;
+  font-size: 77px;
+  font-weight: bold;
+  line-height: 77px;
+  text-align: center;
+
+  @media (max-width: 1330px) {
+    font-size: 74px;
+    line-height: 74px;
+  }
+
+  @media (max-width: 1165px) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  @media (max-width: 1055px) {
+    font-size: 66px;
+    line-height: 66px;
+  }
+
+  @media (max-width: 950px) {
+    font-size: 62px;
+    line-height: 62px;
+  }
+
+  @media (max-width: 830px) {
+    font-size: 58px;
+    line-height: 58px;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+
+  @media (max-width: 610px) {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media (max-width: 436px) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+
+//footer
+@mixin footer-header () {
+  color: $white;
+  font-size: 25px;
+  text-transform: uppercase;
+
+  @media (max-width: 1250px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 1045px) {
+    font-size: 18px;
+  }
+}
+
+
+@mixin footer-content ($color) {
+  color: $color;
+  font-size: 18px;
+
+  @media (max-width: 1250px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 1045px) {
+    font-size: 14px;
+  }
+}
+
+@mixin copy () {
+  color: $white;
+  font-size: 14px;
+  line-height: 45px;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+  }
+}

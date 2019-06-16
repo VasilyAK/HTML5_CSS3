@@ -1,0 +1,42 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "scss/_var";
+@import "scss/_mixin";
+@import "scss/fonts";
+
+html, body {
+  font-family: Lato, sans-serif;
+  max-width: 1600px;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@import "scss/header";
+@import "scss/about";
+@import "scss/tariffs";
+@import "scss/services";
+@import "scss/cab";
+@import "scss/reviews";
+@import "scss/contacts";
+@import "scss/footer";
+@import "scss/copy";
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "about"
+    "tariffs"
+    "services"
+    "cab"
+    "reviews"
+    "contacts"
+    "footer"
+    "copy"
+  ;
+  max-width: inherit;
+  margin: 0;
+  padding: 0;
+}

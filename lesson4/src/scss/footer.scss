@@ -1,0 +1,90 @@
+.footer {
+  background: url("../images/footer-bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-area: footer;
+  grid-column-gap: 6%;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px $main-paddingY 0;
+
+  @media (max-width: 920px) {
+    grid-template-columns: minmax($grid-min-width, 500px);
+    justify-content: center;
+
+    .copy {
+      grid-row: 4 / 5;
+    }
+  }
+
+  .footer__item {
+    margin: 20px;
+
+    .footer__item-header {
+      @include footer-header();
+      border-bottom: 9px solid $yellow;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+
+      @media (max-width: 920px) {
+        padding-bottom: 20px;
+      }
+    }
+
+    .footer__item-content {
+      margin-bottom: 10px;
+      white-space: pre-line;
+      word-wrap: break-word;
+    }
+
+    .footer__item-content_white {
+      @include footer-content($white)
+    }
+
+    .footer__item-content_yellow {
+      @include footer-content($yellow)
+    }
+
+    .footer__item-1-icons {
+      a {
+        margin-right: 10px;
+      }
+    }
+
+    .footer__item-2-icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .icon-android:before, .icon-apple:before {
+        font-size: 30px;
+        line-height: 30px;
+        width: 30px;
+      }
+    }
+
+    .footer__item-3-icons {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+
+      .icon-location:before, .icon-mobile:before {
+        font-size: 24px;
+        line-height: 24px;
+        margin-left: 0;
+        width: 24px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      &:before {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .copy {
+    @include copy();
+    grid-column: 1 / -1;
+  }
+}
