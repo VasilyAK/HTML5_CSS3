@@ -1,0 +1,135 @@
+.about {
+  background: $yellow;
+  display: grid;
+  grid-area: about;
+  grid-template-columns: minmax(240px, 2fr) minmax(400px, 1fr);
+  padding: 140px $main-paddingY;
+  position: relative;
+
+  .about__car {
+  }
+
+  .about__content {
+    padding-right: 30px;
+
+    .about__content-header {
+      @include about-header();
+      max-width: 600px;
+
+      .about__content-header-sp1 {
+        display: block;
+        @include about-header-sp1();
+      }
+    }
+
+    .about__content-p1 {
+      @include about-header-p1();
+      max-width: 600px;
+    }
+
+    .about__content-btn {
+      @include link-btn($black, $white)
+    }
+  }
+
+  .about__book-form {
+    .about__book-form-header {
+      @include about-form-header();
+      background: $black;
+      padding: 0 8.75%;
+
+      .about__book-form-header_sp1 {
+        color: $yellow;
+      }
+    }
+
+    form {
+      background: $white;
+      padding: 0 8.75% 20px;
+
+      input {
+        margin: 20px 0 0;
+
+        &:not([type="submit"]){
+          @include about-form-input();
+          background: $white;
+          border: none;
+          border-bottom: 3px solid #e4e4e4;
+          outline: none;
+        }
+
+        &:nth-child(2n+1):not(:nth-child(7)):not([type="submit"]) {
+          margin-right: 10px;
+          width: calc(50% - 10px);
+        }
+
+        &:nth-child(2n) {
+          margin-left: 10px;
+          width: calc(50% - 10px);
+        }
+
+        &:nth-child(7) {
+          width: 100%;
+        }
+
+        &[type="submit"] {
+          @include link-btn($black, $white);
+          border: none;
+          margin-top: 40px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    grid-template-columns: minmax(240px, 1fr);
+    padding: 120px $main-paddingY;
+
+    .about__content {
+      padding-right: 0;
+
+      .about__content-header {
+        max-width: 100%;
+      }
+
+      .about__content-p1 {
+        max-width: 100%;
+      }
+
+      .about__content-btn {
+        margin: 0 auto;
+      }
+    }
+
+    .about__book-form {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 80px $main-paddingY;
+  }
+}
+
+@media (max-width: 425px) {
+  .about__book-form {
+    form {
+      input {
+        &:nth-child(2n+1):not(:nth-child(7)) {
+          margin-right: 0!important;
+          width: 100%!important;
+        }
+
+        &:nth-child(2n):not([type="submit"]) {
+          margin-left: 0!important;
+          width: 100%!important;
+        }
+      }
+    }
+  }
+}
