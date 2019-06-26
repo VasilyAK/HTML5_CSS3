@@ -1,0 +1,50 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "scss/_var";
+@import "scss/_mixin";
+@import "scss/fonts";
+
+html, body {
+  font-family: Montserrat, sans-serif;
+  max-width: 1920px;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "services"
+    "browsers"
+    "text-box"
+    "projects"
+    "video"
+    "devices"
+    "counters"
+    "posts"
+    "partners"
+    "footer"
+    "copy"
+  ;
+  max-width: inherit;
+  min-width: inherit;
+  min-height: inherit;
+  overflow: hidden;
+  width: inherit;
+}
+
+@import "scss/header";
+@import "scss/services";
+@import "scss/browsers";
+@import "scss/textBox";
+@import "scss/projects";
+@import "scss/video";
+@import "scss/devices";
+@import "scss/counters";
+@import "scss/posts";
+@import "scss/partners";
+@import "scss/footer";
+@import "scss/copy";
