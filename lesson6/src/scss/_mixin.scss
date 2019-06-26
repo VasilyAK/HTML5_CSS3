@@ -1,0 +1,288 @@
+// -------------------------------
+// refs
+// -------------------------------
+@mixin refs {
+  text-decoration: none!important;
+
+  &:hover {
+    color: $brown!important;
+  }
+}
+
+@mixin link-btn {
+  background: $brown;
+  border-bottom: 5px solid $dark-brown;
+  border-radius: 5px;
+  color: $white!important;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none!important;
+  text-transform: uppercase;
+  width: 165px;
+
+  &:active {
+    font-size: 13px;
+  }
+}
+
+// -------------------------------
+// text-styles
+// -------------------------------
+
+// -------------------------------
+// header
+
+@mixin navbar-brand_text-style {
+  color: $white;
+  font-family: Raleway, sans-serif;
+  font-size: 34px;
+
+  @media (max-width: 768px){
+    font-size: 26px;
+  }
+}
+
+@mixin nav-link_text-style {
+  color: $white;
+  font-size: 14px;
+  text-transform: capitalize;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+
+@mixin carousel-caption__header2_text-style {
+  color: $white;
+  font-size: 36px;
+
+  @media (max-width: 1200px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 1050px) {
+    font-size: 24px;
+  }
+}
+
+@mixin carousel-caption__header1_text-style {
+  color: $white;
+  font-size: 52px;
+  font-weight: 700;
+
+  @media (max-width: 1200px) {
+    font-size: 44px;
+  }
+
+  @media (max-width: 1050px) {
+    font-size: 36px;
+  }
+}
+
+@mixin carousel-caption__content_text-style {
+  color: $white;
+  font-size: 16px;
+
+  @media (max-width: 1200px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 1050px) {
+    font-size: 14px;
+  }
+}
+
+// -------------------------------
+//services
+
+@mixin services__item-header_text-style {
+  color: $dark-grey;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@mixin services__item-content_text-style {
+  color: $dark-grey;
+  font-size: 14px;
+  text-align: center;
+}
+
+// -------------------------------
+//browsers
+@mixin browsers__header_text-style {
+  color: $dark-grey;
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  text-align: center;
+
+  @media (max-width: 767px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
+}
+
+@mixin browsers__content_text-style {
+  color: $dark-grey;
+  font-size: 16px;
+  text-align: center;
+
+  @media (max-width: 767px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+// -------------------------------
+//textBox
+@mixin text-box__header_text-style {
+  color: $brown;
+  font-family: Raleway, sans-serif;
+  font-size: 28px;
+
+  @media (max-width: 1024px) {
+    font-size: 24px;
+  }
+}
+
+@mixin text-box__header-sp_text-style {
+  color: $white;
+  font-size: 28px;
+
+  @media (max-width: 1200px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+@mixin text-box__content_text-style {
+  color: $dark-brown;
+  font-size: 18px;
+
+  @media (max-width: 1200px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+// -------------------------------
+//projects
+@mixin projects__header_text-style {
+  color: $dark-grey;
+  font-family: Raleway, sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+@mixin projects__content_text-style {
+  color: $dark-grey;
+  font-size: 16px;
+  text-align: center;
+}
+
+@mixin projects__nav-item_text-style {
+  color: $dark-grey;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+@mixin projects__item-header_text-style {
+  color: $brown;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+@mixin projects__item-content_text-style {
+  color: $grey;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+// -------------------------------
+//video
+@mixin video__overlay-header_text-style {
+  color: $white;
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@mixin video__overlay-content_text-style {
+  color: $white;
+  font-size: 16px;
+  text-align: center;
+}
+
+@mixin video__overlay-time_text-style {
+  color: $brown;
+  font-size: 14px;
+  text-align: center;
+}
+
+// -------------------------------
+//devices
+@mixin devices__content-header_text-style {
+  color: $dark-grey;
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    padding-left: 26px;
+  }
+
+  @media (max-width: 425px) {
+    padding-left: 22px;
+  }
+}
+
+@mixin devices__content-text_text-style {
+  color: $grey;
+  font-size: 16px;
+  font-weight: 400;
+
+  @media (max-width: 768px) {
+    padding-left: 15px;
+  }
+
+  @media (max-width: 425px) {
+    padding-left: 14px;
+  }
+}
+
+@mixin devices__content-point_text-style {
+  color: $grey;
+  font-size: 16px;
+  font-weight: 400;
+
+  @media (max-width: 768px) {
+    padding-left: 15px;
+  }
+
+  @media (max-width: 425px) {
+    padding-left: 14px;
+  }
+}

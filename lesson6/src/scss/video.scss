@@ -1,0 +1,74 @@
+.video {
+  background: url("../images/video-poster.png");
+  grid-area: video;
+  max-height: 700px;
+  min-height: 320px;
+  position: relative;
+  width: 100%;
+
+  video {
+    display: none;
+  }
+
+  &__close {
+    background: rgba($dark-grey, 0.7);
+    border: none;
+    border-radius: 10px;
+    display: none;
+    color: $white;
+    font-size: 16px;
+    height: 50px;
+    outline: none!important;
+    position: absolute;
+    text-transform: capitalize;
+    width: 120px;
+    z-index: 100000;
+
+    &:active {
+      font-size: 15px;
+    }
+  }
+
+  &__overlay {
+    &-img-block {
+      align-items: center;
+      background: rgba($dark-grey, 0.7);
+      border-radius: 100%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      height: 100px;
+      margin: 0 auto 45px;
+      width: 100px;
+
+      &:active{
+        .video__overlay-img {
+          height: 75%;
+          width: 75%;
+        }
+      }
+    }
+
+    &-img {
+      height: 80%;
+      width: 80%;
+    }
+
+    &-header {
+      @include video__overlay-header_text-style;
+      margin-bottom: 20px;
+    }
+
+    &-content {
+      @include video__overlay-content_text-style;
+      margin-bottom: 30px;
+    }
+
+    &-time {
+      @include video__overlay-time_text-style;
+      margin-bottom: 0;
+    }
+  }
+
+
+}
